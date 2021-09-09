@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background: green;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .image {
+            margin: 20px 20px 20px 20px;
+        }
+
+        .centre {
+            width: 500px;
+            height: auto;
+        }
+
+        button {
+            background: black;
+            color: white;
+            width: 15%;
+            height: auto;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div><strong>
+            <h1>login page</h1>
+        </strong></div>
+    <form action="">
+        <div class="image">
+            <a href="https://www.valuebound.com/" target="_blank"><img src="./images/login-button-260nw-369107741.jpg" class="centre" alt="login image"></a>
+        </div>
+        <div>
+            <label for="name" id="name"><strong>username</strong></label>
+            <input type="text" placeholder="username" minLength="5" maxLength="10" id="name" required>
+        </div>
+        <div>
+            <label for="password" id="password"><strong>password</strong></label>
+            <input type="password" placeholder="password" minLength="10" maxLength="15" id="password" required>
+        </div>
+        <div>
+            <input type="checkbox">remember me
+        </div>
+        <div>
+            <button type="submit" onclick="submit">login</button>
+        </div>
+    </form>
+</body>
+
+</html>
